@@ -33,8 +33,8 @@
     </div>
     <div class="main_block_texts">
 
-      <h1 class="main_text">Pavel Glazunov</h1>
-      <p class="main_small_text">my website</p>
+      <h1 class="main_text" id="typing_name"></h1>
+      <p class="main_small_text" id="typing_small_text"></p>
     </div>
   </div>
   <section class="about_section">
@@ -81,10 +81,37 @@
 
 import CarouselImage from "@/components/CarouselImages";
 import TitleText from "@/components/title";
+
 export default {
   name: 'App',
   components: {TitleText, CarouselImage}
 }
+
+let i = 0;
+let j = 0;
+const txt = 'Pavel Glazunov'; /* The text */
+const small_text = 'my website'; /* The text */
+let speed = 50; /* The speed/duration of the effect in milliseconds */
+
+setTimeout(typeWriter, 500)
+
+function typeWriter() {
+  console.log(i, j)
+  if (i < txt.length) {
+    document.getElementById("typing_name").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  } else {
+    if (j < small_text.length) {
+      document.getElementById("typing_small_text").innerHTML += small_text.charAt(j);
+      j++;
+      setTimeout(typeWriter, speed);
+  }
+
+}}
+
+
+
 </script>
 
 <style>
@@ -175,6 +202,7 @@ body {
 
   margin-bottom: 10vh;
 }
+
 .about_text {
   width: 30vw;
 
