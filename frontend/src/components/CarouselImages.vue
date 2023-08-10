@@ -63,7 +63,7 @@ export default {
 .carousel_image {
   width: 100%;
   height: 100%;
-  border-radius: 3vw;
+  border-radius: 1vw;
 
 }
 
@@ -76,7 +76,7 @@ export default {
   padding: 0;
   list-style: none;
   box-shadow: 0px 0px 250px -2px rgba(235, 37, 86, 0.25);
-  border-radius: 3vw;
+  border-radius: 1vw;
   /**
     * Where the magic happens
     */
@@ -321,7 +321,7 @@ export default {
   * Theming
 */
 .my-carousel {
-  border-radius: 3vw;
+  border-radius: 1vw;
 }
 
 .carousel__slide {

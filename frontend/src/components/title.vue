@@ -16,7 +16,8 @@ export default {
 <style scoped>
 .title_block {
   border-bottom: 1px #C32A7C solid;
-  width: 60%;
+  width: max-content;
+  padding: 0 2vw;
 
 }
 p {
