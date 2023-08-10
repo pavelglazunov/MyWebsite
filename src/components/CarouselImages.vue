@@ -20,7 +20,7 @@
 <!--    <div class="carousel__controls">-->
 <!--      <label class="carousel__control carousel__control&#45;&#45;backward" for="H"></label>-->
 <!--      <label class="carousel__control carousel__control&#45;&#45;forward" for="J"></label>-->
-<!--    </div>-->
+<!--    </div>-->x`
 <!--    <div class="carousel__controls">-->
 <!--      <label class="carousel__control carousel__control&#45;&#45;backward" for="I"></label>-->
 <!--      <label class="carousel__control carousel__control&#45;&#45;forward" for="F"></label>-->
