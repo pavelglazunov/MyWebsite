@@ -16,7 +16,7 @@ export const ALL_PROJECTS = [
         "project_name": "MyWebsite",
         "description": "Этот сайт :)",
         "url": {
-            "href": "http://pavelg-lazunov.ru",
+            "href": "http://pavel-glazunov.ru",
             "text": "открыть"
         },
         "code": null,
