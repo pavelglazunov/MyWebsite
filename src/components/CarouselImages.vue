@@ -2,33 +2,39 @@
   <div class="carousel my-carousel carousel--translate">
     <input class="carousel__activator" type="radio" name="carousel" id="F" checked="checked"/>
     <input class="carousel__activator" type="radio" name="carousel" id="G"/>
-    <input class="carousel__activator" type="radio" name="carousel" id="H"/>
-    <input class="carousel__activator" type="radio" name="carousel" id="I"/>
-    <input class="carousel__activator" type="radio" name="carousel" id="J"/>
+<!--    <input class="carousel__activator" type="radio" name="carousel" id="H"/>-->
+<!--    <input class="carousel__activator" type="radio" name="carousel" id="I"/>-->
+<!--    <input class="carousel__activator" type="radio" name="carousel" id="J"/>-->
     <div class="carousel__controls">
-      <label class="carousel__control carousel__control--backward" for="J"></label>
+      <label class="carousel__control carousel__control--backward" for="G"></label>
       <label class="carousel__control carousel__control--forward" for="G"></label>
     </div>
     <div class="carousel__controls">
       <label class="carousel__control carousel__control--backward" for="F"></label>
-      <label class="carousel__control carousel__control--forward" for="H"></label>
-    </div>
-    <div class="carousel__controls">
-      <label class="carousel__control carousel__control--backward" for="G"></label>
-      <label class="carousel__control carousel__control--forward" for="I"></label>
-    </div>
-    <div class="carousel__controls">
-      <label class="carousel__control carousel__control--backward" for="H"></label>
-      <label class="carousel__control carousel__control--forward" for="J"></label>
-    </div>
-    <div class="carousel__controls">
-      <label class="carousel__control carousel__control--backward" for="I"></label>
       <label class="carousel__control carousel__control--forward" for="F"></label>
     </div>
+<!--    <div class="carousel__controls">-->
+<!--      <label class="carousel__control carousel__control&#45;&#45;backward" for="G"></label>-->
+<!--      <label class="carousel__control carousel__control&#45;&#45;forward" for="I"></label>-->
+<!--    </div>-->
+<!--    <div class="carousel__controls">-->
+<!--      <label class="carousel__control carousel__control&#45;&#45;backward" for="H"></label>-->
+<!--      <label class="carousel__control carousel__control&#45;&#45;forward" for="J"></label>-->
+<!--    </div>-->
+<!--    <div class="carousel__controls">-->
+<!--      <label class="carousel__control carousel__control&#45;&#45;backward" for="I"></label>-->
+<!--      <label class="carousel__control carousel__control&#45;&#45;forward" for="F"></label>-->
+<!--    </div>-->
     <div class="carousel__track">
       <li class="carousel__slide">
         <img class="carousel_image" alt="Image? Where are tou?" src="./../assets/MyImage.png">
       </li>
+      <li class="carousel__slide">
+        <img class="carousel_image" alt="Image? Where are tou?" src="./../assets/MyImage1.png">
+      </li>
+<!--      <li class="carousel__slide">-->
+<!--        <img class="carousel_image" alt="Image? Where are tou?" src="./../assets/photo_2023-08-11_01-22-23.jpg">-->
+<!--      </li>-->
 <!--      <li class="carousel__slide">-->
 <!--        <h1>G</h1>-->
 <!--      </li>-->
@@ -45,9 +51,9 @@
     <div class="carousel__indicators">
       <label class="carousel__indicator" for="F"></label>
       <label class="carousel__indicator" for="G"></label>
-      <label class="carousel__indicator" for="H"></label>
-      <label class="carousel__indicator" for="I"></label>
-      <label class="carousel__indicator" for="J"></label>
+<!--      <label class="carousel__indicator" for="H"></label>-->
+<!--      <label class="carousel__indicator" for="I"></label>-->
+<!--      <label class="carousel__indicator" for="J"></label>-->
     </div>
   </div>
 </template>
