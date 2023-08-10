@@ -105,7 +105,14 @@ export default {
 
   background: linear-gradient(0deg, #120A1B 0%, #120A1B 100%);
   box-shadow: 5px 5px 28px -15px rgba(195, 42, 124, 0.55);
+
+  transition-duration: 0.3s;
 }
+
+.card_block:hover {
+  box-shadow: 10px 10px 28px -15px rgba(194, 34, 121, 0.66);
+}
+
 
 .github_url {
   width: 100%;

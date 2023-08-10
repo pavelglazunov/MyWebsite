@@ -45,11 +45,11 @@
     <div class="about_text">
       <TitleText text="обо мне"/>
       <ul class="text_list">
-        <li>Возраст: 17 лет</li>
-        <li>Опыт в IT: Лицей академии Яндекс</li>
-        <li>ЯП: python, js</li>
-        <li>Город: Москва</li>
-        <li>Школа: ГБОУ школа №1580 при МГТУ им. Баумана</li>
+        <li class="li_text">Возраст: 17 лет</li>
+        <li class="li_text">Опыт в IT: Лицей академии Яндекс</li>
+        <li class="li_text">ЯП: python, js</li>
+        <li class="li_text">Город: Москва</li>
+        <li class="li_text">Школа: ГБОУ школа №1580 при МГТУ им. Баумана</li>
       </ul>
     </div>
 
@@ -110,6 +110,9 @@ import TitleText from "@/components/title";
 import MyTab from "@/components/tab";
 import ProjectCard from "@/components/card";
 import TypingEffect from "@/components/TypingEffect";
+import {ALL_PROJECTS} from "@/assets/projects"
+
+console.log(ALL_PROJECTS)
 
 export default {
   name: 'App',
@@ -118,7 +121,7 @@ export default {
     return {
       "activeTab": 'websites',
       "question_text": null,
-      "all_cards": [],
+      "all_cards": ALL_PROJECTS,
       "cards": [],
     }
   },
@@ -135,20 +138,7 @@ export default {
   },
 
   async mounted() {
-    await fetch("http://127.0.0.1:8080/get_projects").then(response => response.json())
-        .then(data => {
-          // Обработка полученного JSON
-          console.log("json", data)
-
-          this.all_cards = data
-          this.updateActiveTab({"target": {"id": "websites"}})
-          // console.log(data);
-        })
-        .catch(error => {
-          // Обработка ошибки
-          console.error(error);
-        });
-
+    this.updateActiveTab({"target": {"id": "websites"}})
   }
 }
 
@@ -252,6 +242,11 @@ body {
   list-style: inside;
 
   margin-bottom: 8vh;
+}
+
+.li_text:hover {
+  filter: drop-shadow(0px 6px 6px rgba(213, 60, 60, 0.25));
+
 }
 
 .about_text {

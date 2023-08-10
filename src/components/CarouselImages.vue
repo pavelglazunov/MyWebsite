@@ -77,22 +77,14 @@ export default {
   list-style: none;
   box-shadow: 0px 0px 250px -2px rgba(235, 37, 86, 0.25);
   border-radius: 1vw;
-  /**
-    * Where the magic happens
-    */
-  /**
-      * Control element - right/left arrows
-    */
-  /**
-      * Element for holding slide indicators
-    */
-  /**
-      * Indicator for indicating active slide
-    */
-  /**
-      * Create rules for when slides are contained within a track
-    */
+
+  transition-duration: 0.3s;
+
 }
+.carousel:hover {
+  box-shadow: 0px 0px 250px -2px rgba(235, 37, 86, 0.3);
+}
+
 
 .carousel__controls,
 .carousel__activator {
